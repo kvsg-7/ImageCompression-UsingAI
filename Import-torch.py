@@ -52,7 +52,7 @@ def calculate_psnr(original_image, compressed_image):
 def main():
     print("Starting image compression process...")
     # Path to the input image file
-    image_path = "/Users/vivekkumar/Downloads/sherry-christian-8Myh76_3M2U-unsplash.jpg"  # Change to your image path
+    image_path = "Your image path"  # Change to your image path
     
     if not os.path.exists(image_path):
         print(f"Error: Image not found at {image_path}")
@@ -92,7 +92,7 @@ def main():
     # Save the compressed image
     print("Saving compressed image...")
     compressed_img = transforms.ToPILImage()(compressed_img_tensor.squeeze(0).cpu())
-    save_path = "/Users/vivekkumar/Downloads/compressed_image.jpg"
+    save_path = "put you save_path"
     compressed_img.save(save_path)
     print(f"Compressed image saved at: {save_path}")
     
