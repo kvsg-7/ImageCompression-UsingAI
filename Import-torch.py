@@ -1,7 +1,7 @@
 import torch
 import torch.nn.functional as F
 from torchvision import transforms
-from compressai.zoo import bmshj2018_factorized
+from compressai.zoo import bmshj2018_factorized # type: ignore
 from PIL import Image
 import matplotlib.pyplot as plt
 import os
